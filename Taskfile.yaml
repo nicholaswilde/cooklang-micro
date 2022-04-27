@@ -1,0 +1,14 @@
+---
+version: '3'
+
+tasks:
+  lint:
+    desc: Lint files
+    cmds:
+      - yamllint .
+    silent: true
+
+  default:
+    cmds:
+      - "task -l"
+    silent: true
