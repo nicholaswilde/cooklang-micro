@@ -12,14 +12,14 @@
 
 Copy `cook.yaml` to the `~/.config/micro/syntax/` folder.
 
-### :link:&nbsp; Symbolic Link from Repo
-
 ```shell
 # Create the syntax directory if it doesn't exist
 mkdir -p ~/.config/micro/syntax
 # From the repo directory
 cp ./syntax/cook.yaml ~/.config/micro/syntax/
 ```
+
+### :link:&nbsp; Symbolic Link from Repo
 
 Make a symbolic link from the repo directory if you want to keep the syntax
 file up to date.
