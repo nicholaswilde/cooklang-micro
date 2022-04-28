@@ -7,10 +7,10 @@ detect:
 
 rules:
     # Ingredients
-    - identifier: "@[A-Za-z ]+{[^}]*}|@[A-Za-z]+"
+    - identifier: "@[A-Za-z0-9\\- ]+{[^}]*}|@[A-Za-z0-9\\-]+"
 
     # Cookware
-    - type: "#[A-Za-z ]+{[^}]*}|#[A-Za-z]+"
+    - type: "#[A-Za-z0-9\\- ]+{[^}]*}|#[A-Za-z0-9\\-]+"
 
     # Timers
     - constant.number:
@@ -27,8 +27,8 @@ rules:
         end: "$"
         rules:
             - todo: "(TODO|XXX|FIXME)"
-            - identifier: "[^:]+:"
-            - symbol.operator: "^>>"
+            - identifier: "[A-Za-z]+: "
+            - symbol.operator: "(>>|: )"
 
 
     # Conditionals and control flow
